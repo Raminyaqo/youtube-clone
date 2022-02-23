@@ -87,3 +87,7 @@
     gap: 3rem 1rem;
     margin: ;
 }
+
+.video-section:first-child{
+    border-top: none;
+}
