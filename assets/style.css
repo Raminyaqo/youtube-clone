@@ -1,47 +1,89 @@
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+.search-input {
+  width: 100%;
+  padding: .4rem;
+  border: 1px solid#777;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  border: 1px solid #777;
+  background: #f8f8f8;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: #f0f0f0;
+}
+
+.menu-icons {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.menu-channel-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.categories {
+  padding: 1rem 2rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid #f8f8f8;
+  background: #e7e7e7;
+  transition: background 0.9s ease in-out;
+}
+.category:hover{
+    background: #DDD;
+}
+
+
+.category.active{
+    background: #606060;
+    color: #f0f0f0;
+}
+
+.video-section{
     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-.youtube-logo{
-    height: 20px;
-}
-
-.search-bar{
-   
-    display: flex;
-    flex-grow: 1;
-    margin: 0 2rem 0 4rem;
-}
-.search-input{
-width: 100%;
-padding: .4rem;
-border: 1px solid#777;
-}
-
-.search-btn{
-    display: flex;
-    align-items: center;
-    padding: 0 1.25rem;
-    border: 1px solid #777;
-    background: #f8f8f8;
-    border-left: none;
-    cursor: pointer;
-}
-
-.search-btn:hover{
-    background: #f0f0f0;
-}
-
-.menu-icons{
-display: flex;
-align-items: center;
-gap: .5rem;
-
+    gap: 3rem 1rem;
+    margin: ;
 }
